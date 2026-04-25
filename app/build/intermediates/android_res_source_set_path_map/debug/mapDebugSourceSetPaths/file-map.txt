@@ -1,0 +1,7 @@
+com.example.gallery.app-pngs-0 C:\Users\kefyalew\AndroidStudioProjects\Gallery\app\build\generated\res\pngs\debug
+com.example.gallery.app-updated_navigation_xml-1 C:\Users\kefyalew\AndroidStudioProjects\Gallery\app\build\generated\updated_navigation_xml\debug
+com.example.gallery.app-packageDebugResources-2 C:\Users\kefyalew\AndroidStudioProjects\Gallery\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.gallery.app-packageDebugResources-3 C:\Users\kefyalew\AndroidStudioProjects\Gallery\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.gallery.app-debug-4 C:\Users\kefyalew\AndroidStudioProjects\Gallery\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.gallery.app-debug-5 C:\Users\kefyalew\AndroidStudioProjects\Gallery\app\src\debug\res
+com.example.gallery.app-main-6 C:\Users\kefyalew\AndroidStudioProjects\Gallery\app\src\main\res
