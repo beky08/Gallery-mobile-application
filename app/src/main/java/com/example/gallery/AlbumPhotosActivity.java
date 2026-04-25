@@ -14,7 +14,7 @@ public class AlbumPhotosActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main); // የድሮውን ሪሳይክለር ቪው ሌይአውት ይጠቀማል
+        setContentView(R.layout.activity_main); // old recycle view layout use
 
         albumName = getIntent().getStringExtra("albumName");
         photoPaths = getIntent().getStringArrayListExtra("photoPaths");
@@ -25,7 +25,7 @@ public class AlbumPhotosActivity extends AppCompatActivity {
         }
 
         recyclerView = findViewById(R.id.recyclerView);
-        recyclerView.setLayoutManager(new GridLayoutManager(this, 3)); // ፎቶዎቹን በ 3 ተርታ
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 3)); // photos in three grid
 
         PhotoGridAdapter adapter = new PhotoGridAdapter(this, photoPaths);
         recyclerView.setAdapter(adapter);

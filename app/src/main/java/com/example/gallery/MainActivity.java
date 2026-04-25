@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         checkPermissions();
     }
 
-    // አዲስ ፎቶ በካሜራ ሲነሳ ወይም አፑ ሲከፈት ወዲያው እንዲያድስ (Refresh)
+    // new photo using camera or app still open fast(Refresh) 
     @Override
     protected void onResume() {
         super.onResume();
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<ImageModel> tempImages = new ArrayList<>();
         Uri uri = MediaStore.Images.Media.EXTERNAL_CONTENT_URI;
 
-        // DATE_MODIFIED ን በመጠቀም አዳዲስ ፎቶዎች መጀመሪያ እንዲመጡ እናደርጋለን
+        // DATE_MODIFIED ን using new photo can be first
         String[] proj = {
                 MediaStore.Images.Media._ID,
                 MediaStore.Images.Media.DATA,
@@ -93,12 +93,12 @@ public class MainActivity extends AppCompatActivity {
             while (cursor.moveToNext()) {
                 String path = cursor.getString(dataCol);
 
-                // --- ትክክለኛውን የአልበም ስም የማግኛ ዘዴ ---
+                // ---exact name of the album get method---
                 String albumName = "Unknown";
                 try {
                     File file = new File(path);
                     if (file.getParentFile() != null) {
-                        // የፎልደሩን ስም በቀጥታ ከፋይሉ መንገድ ላይ ይወስዳል
+                        // folder name directly get from file path
                         albumName = file.getParentFile().getName();
                     }
                 } catch (Exception e) {
